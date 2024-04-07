@@ -1,0 +1,91 @@
+:root {
+    --bgColor: #674ab3;
+    --borderColor: #9075d8;
+    --buttonColor: #046d1f;
+    --buttonActive: #36c281;
+    
+}   
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 20px;
+}
+
+html {
+    background-image: url(./assets/bg-img.webp);
+    background-position: 10%;
+}
+
+body {
+    
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    font-family: Roboto;
+}
+
+h1{
+    text-align: center;
+    font-family: Orbitron, sans-serif;
+    color: white;
+    text-shadow: black 10px 10px 10px;
+}
+
+.container {
+    width: 500px;
+    min-height: 150px;
+    background-color: rgba(255, 255, 255, .08);
+    backdrop-filter: blur(7px);
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, .2);
+    border-radius: 16px;
+    justify-content: center;
+}
+
+#eaN {
+    color: white;
+    text-shadow: black 10px 10px 10px;
+}
+
+.container * {
+    font-size: 1.7rem;
+}
+
+button, input {
+    border-radius: 10px;
+    padding: 5px 10px;;
+    border: none;
+}
+
+button {
+    background-color: var(--buttonActive);
+    color: white;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--buttonColor);
+    color: white;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#output {
+    min-height: 50px;
+    display: none;
+}
+
+#output * {
+    margin: auto;
+    padding: 10px;
+}
