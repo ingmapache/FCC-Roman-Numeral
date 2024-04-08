@@ -36,9 +36,9 @@ h1{
 }
 
 .container {
-    width: 500px;
+    width: 550px;
     min-height: 150px;
-    background-color: rgba(255, 255, 255, .08);
+    background-color: rgba(0, 214, 96, 0.08);
     backdrop-filter: blur(7px);
     box-shadow: 10px 0px 10px rgba(0, 0, 0, .2);
     border-radius: 16px;
@@ -80,9 +80,20 @@ button:active {
     border-left: 1px solid white;
 }
 
+.inputZone {
+    flex-direction: row;
+    gap: 10px;
+}
+
 #output {
     min-height: 50px;
-    display: none;
+    
+}
+
+.error {
+    background-color: red;
+    color: white;
+    font-weight: 3rem!important;
 }
 
 #output * {
